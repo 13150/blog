@@ -1,11 +1,14 @@
 <h1> detalle del articulo </h1>
 <div>
-<p><strong> titulo: </strong> </p>
-
-<p><%= @article.title %></p>
+    <p><strong> titulo: </strong> </p>
+    <p><%= @article.title %></p>
 </div>
 
 <div>
-<p><strong> body: </strong> </p>
-<p><%= @article.body %></p>
+    <p><strong> body: </strong> </p>
+    <p><%= @article.body %></p>
 </div>
+
+<ul>
+    <li><%= link_to "Edit", edit_article_path(@article) %></li>
+</ul>
